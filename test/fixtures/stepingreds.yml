@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  recipe_id: 1
+  step_id: 1
+  ingredient_id: 1
+  amount: 1.5
+
+two:
+  recipe_id: 1
+  step_id: 1
+  ingredient_id: 1
+  amount: 1.5

@@ -1,0 +1,20 @@
+<% title "Step" %>
+
+<p>
+  <strong>Recipe:</strong>
+  <%= @step.recipe_id %>
+</p>
+<p>
+  <strong>Number:</strong>
+  <%= @step.number %>
+</p>
+<p>
+  <strong>Intruction:</strong>
+  <%= @step.intruction %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_step_path(@step) %> |
+  <%= link_to "Destroy", @step, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", steps_path %>
+</p>

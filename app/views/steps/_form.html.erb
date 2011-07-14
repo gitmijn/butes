@@ -1,0 +1,16 @@
+<%= form_for @step do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :recipe_id %><br />
+    <%= f.number_field :recipe_id %>
+  </p>
+  <p>
+    <%= f.label :number %><br />
+    <%= f.number_field :number %>
+  </p>
+  <p>
+    <%= f.label :intruction %><br />
+    <%= f.text_area :intruction %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
