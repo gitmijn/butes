@@ -10,10 +10,8 @@
 </p>
  <strong>Ingredients</strong>
   <ol>
-   <% for step in @recipe.steps %>
-        <% for ingredient in step.ingredients %>
-             <li><%=h step.ingredient %></li>
-   <% end %>
+    <% for ingredient in @recipe.ingredients %>
+             <li><%=h ingredient.name %></li>
   <% end %>
   </ol>
   <strong>Steps</strong>
