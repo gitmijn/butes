@@ -5,3 +5,10 @@
 require File.expand_path('../config/application', __FILE__)
 
 Butes::Application.load_tasks
+
+module ::Butes
+  class Application
+    include Rake::DSL
+  end
+end
+
