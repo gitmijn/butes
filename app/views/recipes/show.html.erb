@@ -8,13 +8,20 @@
   <strong>Description:</strong>
   <%= @recipe.description %>
 </p>
+ <strong>Ingredients</strong>
+  <ol>
+   <% for step in @recipe.steps %>
+        <% for ingredient in step.ingredients %>
+             <li><%=h step.ingredient %></li>
+   <% end %>
+  <% end %>
+  </ol>
   <strong>Steps</strong>
   <ol>
    <% for step in @recipe.steps %>
     <li><%=h step.instruction %></li>
    <% end %>
   </ol>
-
 <p>
   <%= link_to "Edit", edit_recipe_path(@recipe) %> |
   <%= link_to "Destroy", @recipe, :confirm => 'Are you sure?', :method => :delete %> |

@@ -4,13 +4,13 @@
   <tr>
     <th>Recipe</th>
     <th>Number</th>
-    <th>Intruction</th>
+    <th>Instruction</th>
   </tr>
   <% for step in @steps %>
     <tr>
       <td><%= step.recipe_id %></td>
       <td><%= step.number %></td>
-      <td><%= step.intruction %></td>
+      <td><%= step.instruction %></td>
       <td><%= link_to "Show", step %></td>
       <td><%= link_to "Edit", edit_step_path(step) %></td>
       <td><%= link_to "Destroy", step, :confirm => 'Are you sure?', :method => :delete %></td>

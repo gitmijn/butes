@@ -8,9 +8,15 @@
   <strong>Number:</strong>
   <%= @step.number %>
 </p>
+<strong>Ingredients</strong>
+  <ol>
+   <% for ingredient in @step.ingredients %>
+    <li><%=h ingredient.name %></li>
+   <% end %>
+  </ol>
 <p>
   <strong>Intruction:</strong>
-  <%= @step.intruction %>
+  <%= @step.instruction %>
 </p>
 
 <p>
